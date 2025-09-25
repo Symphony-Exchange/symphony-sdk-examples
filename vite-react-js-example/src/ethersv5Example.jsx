@@ -22,7 +22,7 @@ export const Ethersv5Example = () => {
   const [isTokenListed, setIsTokenListed] = useState(undefined);
 
   // Private key for testing
-  const pk = import.meta.env.VITE_TEST_WALLET || "";
+  const pk = import.env.TEST_WALLET || "";
 
   // Fetch route when inputs change
   useEffect(() => {
