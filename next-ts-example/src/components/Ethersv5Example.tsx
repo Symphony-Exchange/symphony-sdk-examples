@@ -40,7 +40,7 @@ export const Ethersv5Example = () => {
   );
 
   // Private key for testing
-  const pk = process.env.NEXT_PUBLIC_TEST_WALLET || "";
+  const pk = process.env.TEST_WALLET || "";
 
   // Fetch route when inputs change
   useEffect(() => {
