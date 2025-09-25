@@ -28,8 +28,8 @@ export const ViemExample = () => {
   const [customApprovalAmount, setCustomApprovalAmount] = useState("1.05");
   const [isTokenListed, setIsTokenListed] = useState(undefined);
 
-  // Private key for testing (should be in env in production)
-  const pk = import.meta.env.VITE_TEST_WALLET || "";
+  // Private key for testing
+  const pk = import.env.TEST_WALLET || "";
 
   // Fetch route when inputs change
   useEffect(() => {
