@@ -56,8 +56,8 @@ export const ViemExample = () => {
     undefined
   );
 
-  // Private key for testing (should be in env in production)
-  const pk = process.env.NEXT_PUBLIC_TEST_WALLET || "";
+  // Private key for testing 
+  const pk = process.env.TEST_WALLET || "";
 
   // Fetch route when inputs change
   useEffect(() => {
